@@ -12,3 +12,7 @@
   --radius-secondary: 15px;
   --radius-tertiary: 6px;
 }
+
+body {
+  background-color: var(--color-bg-primary);
+}

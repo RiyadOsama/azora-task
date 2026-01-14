@@ -1,7 +1,9 @@
+import Logo from "./components/atoms/Logo";
+
 function App() {
   return (
     <>
-      <h1 className="text-5xl text-green-800">Azora Task!</h1>
+      <Logo size={50} />
     </>
   );
 }

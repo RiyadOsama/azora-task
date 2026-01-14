@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@theme {
+  --color-bg-primary: #26262b;
+  --color-bg-secondary: #fefefe;
+
+  --color-bg-card: #f5f5f5;
+
+  --color-bg-logo: #e6c3a5;
+
+  --radius-primary: 20px;
+  --radius-secondary: 15px;
+  --radius-tertiary: 6px;
+}

@@ -1,9 +1,9 @@
-import Logo from "./components/atoms/Logo";
+import Header from "./components/organisms/Header";
 
 function App() {
   return (
     <>
-      <Logo size={50} />
+      <Header />
     </>
   );
 }

@@ -1,4 +1,4 @@
-export default function WorkWithPics() {
+export default function Square({ text }: { text: string }) {
   return (
     <>
       <g>
@@ -15,7 +15,7 @@ export default function WorkWithPics() {
 
         <foreignObject width="173" height="173">
           <div className="flex items-center justify-center h-full w-full p-4">
-            <div className="text-[#A54E34] text-center text-3xl font-bold leading-tight">WORK WITH PICS</div>
+            <div className="text-[#A54E34] text-center text-3xl font-bold leading-tight">{text}</div>
           </div>
         </foreignObject>
       </g>

@@ -1,7 +1,7 @@
-import TestimonialBottom from "./components/molecules/TestimonialBottom";
 import Features from "./components/organisms/Features";
 import Header from "./components/organisms/Header";
 import Hero from "./components/organisms/Hero";
+import Testimonials from "./components/organisms/Testimonials";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <br />
       <Features />
       <br />
-      <TestimonialBottom />
+      <Testimonials />
     </>
   );
 }

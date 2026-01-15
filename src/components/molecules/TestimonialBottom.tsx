@@ -87,26 +87,27 @@ export default function TestimonialBottom() {
   };
 
   const visibleItems = SOCIAL_TESTIMONIALS.slice(currentIndex, currentIndex + visibleSlides);
-
   return (
-    <section className="py-16 px-4 md:px-8">
+    <section className="py-10 px-4 md:px-8">
       <div className="container mx-auto max-w-6xl relative testimonial-container">
         {/* Arrows */}
-        <div className="flex justify-end gap-4 mb-6">
+        <div className="flex justify-end gap-4 mb-8">
           <button
             onClick={handlePrev}
             type="button"
-            className="testimonial-prev-btn cursor-pointer opacity-50 hover:opacity-100 transition-opacity z-20"
+            className="group testimonial-prev-btn cursor-pointer opacity-60 hover:opacity-100 transition-all z-20 p-2 rounded-lg hover:bg-white"
+            aria-label="Previous testimonial"
           >
             <svg
               width="24"
               height="24"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="white"
+              stroke="currentColor"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
+              className="text-gray-700 group-hover:text-gray-900"
             >
               <path d="M15 18l-6-6 6-6" />
             </svg>
@@ -115,56 +116,60 @@ export default function TestimonialBottom() {
           <button
             onClick={handleNext}
             type="button"
-            className="testimonial-next-btn cursor-pointer opacity-50 hover:opacity-100 transition-opacity z-20"
+            className="group testimonial-next-btn cursor-pointer opacity-60 hover:opacity-100 transition-all z-20 p-2 rounded-lg hover:bg-white"
+            aria-label="Next testimonial"
           >
             <svg
               width="24"
               height="24"
               viewBox="0 0 24 24"
               fill="none"
-              stroke="white"
+              stroke="currentColor"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
+              className="text-gray-700 group-hover:text-gray-900"
             >
               <path d="M9 18l6-6-6-6" />
             </svg>
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pb-12">
           {visibleItems.map((item) => (
             <div
               key={item.id}
-              className="flex flex-col h-full rounded-primary overflow-hidden shadow-sm border border-gray-100"
+              className="flex flex-col h-full rounded-2xl overflow-hidden shadow-md border border-gray-200 hover:shadow-lg transition-shadow duration-300 group"
             >
-              <div className={`${item.bgColor} p-8 grow min-h-70`}>
-                <p className="text-white text-lg font-medium leading-snug">{item.quote}</p>
+              <div className={`${item.bgColor} p-8 grow min-h-72 flex flex-col justify-between`}>
+                <p className="text-white text-lg font-medium leading-relaxed mb-4">{item.quote}</p>
+                <div className="w-12 h-12 rounded-full bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </div>
 
-              <div className="bg-[#F9F9F9] p-6 flex justify-between items-center">
+              <div className="bg-white p-6 flex justify-between items-center">
                 <div>
-                  <h4 className="font-bold text-gray-900 text-sm">{item.name}</h4>
+                  <h4 className="font-semibold text-gray-900 text-sm">{item.name}</h4>
                   <p className="text-gray-400 text-xs mt-1">{item.handle}</p>
                 </div>
-                <div className="w-5 h-5 opacity-40">
-                  <img src={item.socialIcon} alt="Social" className="w-full h-full object-contain grayscale" />
+                <div className="w-6 h-6 opacity-50 group-hover:opacity-100 transition-opacity">
+                  <img src={item.socialIcon} alt={`${item.name} social`} className="w-full h-full object-contain" />
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        {/* Dots */}
-        <div className="flex justify-center gap-3 mt-4">
+        {/* Pagination Dots */}
+        <div className="flex justify-center gap-2 mt-8">
           {Array.from({ length: totalSlides - visibleSlides + 1 }).map((_, idx) => (
             <button
               key={idx}
               onClick={() => setCurrentIndex(idx)}
-              className={`w-2 h-2 rounded-full transition-colors ${
-                idx === currentIndex ? "bg-gray-900" : "bg-gray-300"
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                idx === currentIndex ? "bg-gray-900 w-8" : "bg-gray-300 hover:bg-gray-400"
               }`}
               aria-label={`Go to slide ${idx + 1}`}
+              aria-current={idx === currentIndex ? "page" : undefined}
             />
           ))}
         </div>

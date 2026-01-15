@@ -1,11 +1,11 @@
 export default function Features() {
   return (
     <>
-      <div className="container mx-auto mt-10 md:mt-40 px-6">
+      <div className="container mx-auto mt-6 md:mt-24 px-6">
         <hr />
 
         {/* Header */}
-        <div className="flex flex-col md:flex-row justify-evenly items-start md:items-center mt-16 md:mt-40 mb-12 md:mb-24 gap-6">
+        <div className="flex flex-col md:flex-row justify-evenly items-start md:items-center mt-10 md:mt-20 mb-8 md:mb-16 gap-4">
           <div className="text-3xl md:text-4xl font-bold max-w-md">What you get on Setapp.</div>
           <div className="text-lg md:text-xl font-light">
             With a single monthly subscription at $9.99, you get 240+ apps for

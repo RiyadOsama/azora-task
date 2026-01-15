@@ -2,13 +2,13 @@ import Logo from "../atoms/Logo";
 
 export default function CallToAction() {
   return (
-    <section className="px-4 md:px-0">
-      <div className="bg-card p-10 md:p-16 m-4 md:m-16 rounded-primary text-primary flex flex-col gap-10 md:gap-12 shadow-sm hover:shadow-md transition-shadow">
-        <div className="opacity-90 mt-16">
+    <section className="px-4 md:px-0 bg-linear-to-b from-secondary from-50% to-primary to-50%">
+      <div className="bg-card p-8 md:p-12 mx-4 md:mx-12 rounded-primary text-primary flex flex-col gap-6 md:gap-8 shadow-sm hover:shadow-md transition-shadow">
+        <div className="opacity-90 mt-8">
           <Logo size={80} />
         </div>
 
-        <div className="space-y-2">
+        <div className="space-y-1">
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Superpowers starting $9.99/month.</h2>
           <p className="text-3xl md:text-5xl font-bold text-gray-500">Free for 7 days.</p>
         </div>

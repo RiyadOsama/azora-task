@@ -3,10 +3,10 @@ import Logo from "../atoms/Logo";
 export default function Header() {
   return (
     <header>
-      <nav className="mx-16 p-8 flex items-center justify-between">
+      <nav className="mx-8 py-4 px-6 flex items-center justify-between">
         <Logo />
 
-        <ul className="flex items-center gap-8">
+        <ul className="flex items-center gap-6">
           {["How it works", "All apps", "Pricing", "For teams", "Blogs", "Podcast"].map((item) => (
             <li key={item}>
               <a

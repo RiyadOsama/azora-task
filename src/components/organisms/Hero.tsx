@@ -4,23 +4,23 @@ import HeroOverlay from "../molecules/HeroOverlay";
 export default function Hero() {
   return (
     <>
-      <div className="relative my-16">
+      <div className="relative mt-16 mb-90">
         <HeroOverlay />
-        <div className="flex flex-col justify-center items-center gap-8">
-          <div className="bg-black hover:bg-card transition duration-300 w-fit rounded-2xl py-4 px-8">
+        <div className="flex flex-col justify-center items-center gap-6">
+          <div className="bg-black hover:bg-card transition duration-300 w-fit rounded-2xl py-2 px-6">
             <Logo size={100} />
           </div>
 
-          <div className="flex flex-col justify-center items-center gap-4 font-bold text-6xl my-9">
+          <div className="flex flex-col justify-center items-center gap-2 font-bold text-6xl my-4">
             <h1>Dozens of apps.</h1>
             <h1>One subscription.</h1>
             <h1>$9.99</h1>
           </div>
 
-          <div className="flex justify-center items-center gap-5">
+          <div className="flex justify-center items-center gap-3">
             <a
               href="#"
-              className="rounded-tertiary px-8 py-4 text-black bg-gray-50 hover:text-white hover:bg-black transition text-xl"
+              className="rounded-tertiary px-6 py-4 text-black bg-gray-50 hover:text-white hover:bg-black transition text-lg"
             >
               Try free for 7 days
             </a>

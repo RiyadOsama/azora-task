@@ -35,7 +35,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="text-white py-8 sm:py-12 md:py-16 lg:py-24 px-4 sm:px-6 md:px-12 lg:px-24">
+    <footer id="blogs" className="text-white py-8 sm:py-12 md:py-16 lg:py-24 px-4 sm:px-6 md:px-12 lg:px-24">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 lg:gap-8 mb-12 md:mb-16 lg:mb-20">
           {/* Logo and Newsletter Section */}

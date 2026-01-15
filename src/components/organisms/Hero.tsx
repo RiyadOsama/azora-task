@@ -4,7 +4,7 @@ import HeroOverlay from "../molecules/HeroOverlay";
 export default function Hero() {
   return (
     <>
-      <div className="relative mt-8 sm:mt-12 md:mt-16 mb-32 sm:mb-48 md:mb-60 px-4 sm:px-6 md:px-8">
+      <div id="how-it-works" className="relative mt-8 sm:mt-12 md:mt-16 mb-32 sm:mb-48 md:mb-90 px-4 sm:px-6 md:px-8">
         <HeroOverlay />
         <div className="flex flex-col justify-center items-center gap-4 sm:gap-6 md:gap-8">
           <div className="bg-black hover:bg-card transition duration-300 w-fit rounded-2xl py-2 px-4 sm:px-6">

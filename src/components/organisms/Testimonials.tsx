@@ -3,7 +3,7 @@ import TestimonialTop from "../molecules/TestimonialTop";
 
 export default function Testimonials() {
   return (
-    <div className="bg-linear-to-b from-primary from-25% to-secondary to-25% py-8 md:py-16 lg:py-20">
+    <div id="pricing" className="bg-linear-to-b from-primary from-25% to-secondary to-25% py-8 md:py-16 lg:py-20">
       <TestimonialTop />
 
       <section className="px-4 sm:px-6 md:px-8 pt-6 md:pt-8 lg:pt-12">

@@ -2,7 +2,7 @@ import Logo from "../atoms/Logo";
 
 export default function CallToAction() {
   return (
-    <section className="px-4 sm:px-6 md:px-0 bg-linear-to-b from-secondary from-50% to-primary to-50%">
+    <section id="for-teams" className="px-4 sm:px-6 md:px-0 bg-linear-to-b from-secondary from-50% to-primary to-50%">
       <div className="bg-card p-6 sm:p-8 md:p-10 lg:p-12 mx-4 sm:mx-6 md:mx-12 rounded-primary text-primary flex flex-col gap-4 sm:gap-6 md:gap-8 shadow-sm hover:shadow-md transition-shadow">
         <div className="opacity-90 mt-4 sm:mt-6 md:mt-8">
           <Logo size={60} />

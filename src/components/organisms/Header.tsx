@@ -4,7 +4,14 @@ import Logo from "../atoms/Logo";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItems = ["How it works", "All apps", "Pricing", "For teams", "Blogs", "Podcast"];
+  const navItems = [
+    { label: "How it works", href: "#how-it-works" },
+    { label: "All apps", href: "#all-apps" },
+    { label: "Pricing", href: "#pricing" },
+    { label: "For teams", href: "#for-teams" },
+    { label: "Blogs", href: "#blogs" },
+    { label: "Podcast", href: "#podcast" },
+  ];
 
   return (
     <header className="relative z-50">
@@ -14,12 +21,12 @@ export default function Header() {
         {/* Desktop Menu */}
         <ul className="hidden lg:flex items-center gap-6">
           {navItems.map((item) => (
-            <li key={item}>
+            <li key={item.label}>
               <a
-                href="#"
+                href={item.href}
                 className="relative py-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-logo after:transition-all hover:after:w-full text-xs sm:text-sm md:text-base"
               >
-                {item}
+                {item.label}
               </a>
             </li>
           ))}
@@ -69,9 +76,9 @@ export default function Header() {
         <div className="absolute top-full left-0 w-full bg-secondary rounded-tertiary border-t shadow-xl lg:hidden text-primary">
           <ul className="flex flex-col p-4 sm:p-6 gap-3 sm:gap-4">
             {navItems.map((item) => (
-              <li key={item}>
-                <a href="#" className="text-base sm:text-lg font-medium block">
-                  {item}
+              <li key={item.label}>
+                <a href={item.href} className="text-base sm:text-lg font-medium block" onClick={() => setIsOpen(false)}>
+                  {item.label}
                 </a>
               </li>
             ))}

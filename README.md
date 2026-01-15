@@ -1,73 +1,72 @@
-# React + TypeScript + Vite
+# Setapp Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fully responsive landing page built with React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Components
 
-## React Compiler
+- **Atoms**: Logo, Circle, Square, Hexagon, Rectangle, Wavy shapes
+- **Molecules**: HeroOverlay, TestimonialTop, TestimonialBottom
+- **Organisms**: Header, Hero, Features, Testimonials, CallToAction, Footer
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Sections
 
-## Expanding the ESLint configuration
+1. **Header**: Navigation bar with responsive menu and language selector
+2. **Hero Section**: Eye-catching headline with CTA buttons and animated background shapes
+3. **Features Section**: Feature cards showcasing app bundle benefits (Keep Mac clean, Write code, Join meetings)
+4. **Testimonials Section**:
+   - Swiper carousel for top testimonials
+   - Grid layout for social media testimonials
+5. **Call-to-Action**: Subscription pricing and signup buttons
+6. **Footer**: Company info, newsletter signup, links, and social media
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Technology Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **React 19**: Latest React with hooks
+- **TypeScript**: Type-safe code
+- **Tailwind CSS**: Utility-first styling
+- **Swiper**: Touch slider library for testimonials
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📦 Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🏃 Development
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm run dev
+```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Runs the app in development mode with hot module reloading.
+
+## 🏗️ Build
+
+```bash
+npm run build
+```
+
+Builds the app for production in the `dist` folder.
+
+## 📋 Linting
+
+```bash
+npm run lint
+```
+
+Checks code for linting errors.
+
+## 📄 Project Structure
+
+```
+src/
+├── components/
+│   ├── atoms/
+│   ├── molecules/
+│   └── organisms/
+├── App.tsx
+├── main.tsx
+└── index.css
 ```

@@ -1,3 +1,4 @@
+import TestimonialTop from "./components/molecules/TestimonialTop";
 import Features from "./components/organisms/Features";
 import Header from "./components/organisms/Header";
 import Hero from "./components/organisms/Hero";
@@ -9,6 +10,8 @@ function App() {
       <Hero />
       <br />
       <Features />
+      <br />
+      <TestimonialTop />
     </>
   );
 }

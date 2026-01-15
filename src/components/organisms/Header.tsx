@@ -11,7 +11,7 @@ export default function Header() {
             <li key={item}>
               <a
                 href="#"
-                className="relative py-1 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-logo after:transition-all hover:after:w-full"
+                className="relative py-1 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-logo after:transition-all hover:after:w-full"
               >
                 {item}
               </a>

@@ -1,3 +1,4 @@
+import CallToAction from "./components/organisms/CallToAction";
 import Features from "./components/organisms/Features";
 import Header from "./components/organisms/Header";
 import Hero from "./components/organisms/Hero";
@@ -12,6 +13,8 @@ function App() {
       <Features />
       <br />
       <Testimonials />
+      <br />
+      <CallToAction />
     </>
   );
 }

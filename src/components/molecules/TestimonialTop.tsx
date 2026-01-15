@@ -112,7 +112,7 @@ export default function TestimonialTop() {
         </Swiper>
 
         {/* Dots */}
-        <div className="custom-pagination-container flex justify-center gap-3 mt-10"></div>
+        <div className="custom-pagination-container flex justify-center gap-3 lexmt-10 mt-16"></div>
       </div>
     </section>
   );

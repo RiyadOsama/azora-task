@@ -6,7 +6,7 @@ import Wavy from "../atoms/Wavy";
 
 export default function HeroOverlay() {
   return (
-    <div className="h-screen w-full overflow-hidden">
+    <div className="h-screen w-full overflow-hidden absolute top-0 right-0 bottom-0 left-0 z-[-1]">
       <svg viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid" className="h-full w-full">
         <g>
           <g transform="translate(50, 50) rotate(-10 100 100)">

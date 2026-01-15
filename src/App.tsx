@@ -1,11 +1,11 @@
 import Header from "./components/organisms/Header";
-import HeroOverlay from "./components/molecules/HeroOverlay";
+import Hero from "./components/organisms/Hero";
 
 function App() {
   return (
     <>
       <Header />
-      <HeroOverlay />
+      <Hero />
     </>
   );
 }

@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="relative my-16">
         <HeroOverlay />
         <div className="flex flex-col justify-center items-center gap-8">
-          <div className="bg-black w-fit rounded-2xl py-4 px-8">
+          <div className="bg-black hover:bg-card transition duration-300 w-fit rounded-2xl py-4 px-8">
             <Logo size={100} />
           </div>
 
